@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Documentation for ColoReX</title>
+	<style type="text/css">
+	h1 {
+		font-family: "Helvetica";
+		font-size:30px;
+	}
+	p,li{
+		font-family: "Helvetica";
+		font-size: 22px;
+	}
+
+	</style>
+	</head>
+	<body>
+		<center>
+			<img src="images/logo-colorex.png" width="500px"/>
+		<h1> Documentation for usage </h1>
+		</center>
+		<h1> Introduction </h1>
+		<p>ColoReX is a GLUI OpenGL application that gives user the power to find colors for designing (of all kinds) by manipulating color channels. It supports RGB and HSV color models.</p>
+		<h1> The Interface </h1>
+		<center>
+		<img src="images/screenshot.png"/>
+		</center>
+		<p>The above image shows the interface of ColoReX application running on Ubuntu Linux 16.04. We can see the following highlights</p>
+		<ul>
+		<li> The Color Window: GLUT Window that show the current color.</li>
+		<li>The RGB Manipulator Controls: These buttons are used to vary color by RGB channels.</li>
+		<li>The HSV Manipulator Controls: These buttons are used to vary color by HSV channels.</li>
+		<li>The Master Control: It resets the color and gives a spinner to change the step of increment/decrement</li>
+		</ul>
+		<h1> The RGB Manipulator </h1>
+		<ul>
+		<li> Keyboard Shortcuts: The application provides shortcuts to all the controls provided by the buttons in the RGB controls</li>
+		<li>RGB Values: This panel shows HEX code and individual channel values for the current color.</li>
+		<li>Red Up/Red Down: Use this button to increase/decrease the Red Channel value by Change Step [defined later].</li>
+		<li>Green Up/Green Down: Use this button to increase/decrease the Green Channel value by Change Step.</li>
+		<li>Blue Up/Blue Down: Use this button to increase/decrease the Blue Channel value by Change Step.</li>
+		<li>Brighten: Use this button to increase the values of all three channels by Change Step simultaneously.</li>
+		<li>Darken: Use this button to decrease the values of all three channels by Change Step simultaneously.</li>
+		</ul>
+		<h1>The HSV Manipulator</h1>
+		<ul>
+		<li>HSV Values: This panel shows individual channel values for the current color.</li>
+		<li>Hue Up/Hue Down: Use this button to increase/decrease the Hue Channel value by Change Step [defined later].</li>
+		<li>Saturation Up/Saturation Down: Use this button to increase/decrease the Saturation Channel value by Change Step.</li>
+		<li>Value Up/Value Down: Use this button to increase/decrease the Value Channel value by Change Step.</li>
+		</ul>
+		<h1> Master Control </h1>
+		<ul>
+		<li>Change to black: Resets color to black (#000000).</li>
+		<li>Change to white: Resets color to white (#FFFFFF).</li>
+		<li>Change Step: Set this value to change the amount of increment/decrement that happens on one click of a Up/Down control. It can be set to any value between 0.01 and 100.00</li> 
+		<li> The application can be closed via the ESC key.</li>
+		</ul>
+		<h1> Bugs and fixes </h1>
+		<ul>
+		<li>In case the keyboard shortcuts are not working, click on the Color window once, wait for the feedback and try again.</li>
+		<li>In case the application doesn't close, you may need to kill the application using Task Manager/process-kill.</li> 
+		</ul>
+	</body>
+</html>

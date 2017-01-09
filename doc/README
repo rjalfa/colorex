@@ -1,0 +1,75 @@
+File Listing
+------------
+
+The following is the tree of the package:
+
+.
+├── doc
+│   ├── images
+│   │   ├── logo-colorex.png
+│   │   └── screenshot.png
+│   ├── manual.html
+│   ├── README
+│   └── report.pdf
+├── Makefile
+└── src
+    ├── assignment.cpp
+    ├── first.cpp
+    └── second.cpp
+
+If the application has been built, the tree is as follows:
+
+.
+├── bin
+│   ├── assignment.o
+│   ├── first.o
+│   └── second.o
+├── doc
+│   ├── images
+│   │   ├── logo-colorex.png
+│   │   └── screenshot.png
+│   ├── manual.html
+│   ├── README
+│   └── report.pdf
+├── Makefile
+└── src
+    ├── assignment.cpp
+    ├── first.cpp
+    └── second.cpp
+
+
+Making from source:
+-------------------
+
+To make from source, we require the following:
+g++ 4.7+
+OpenGL
+glut
+glui
+
+The project contains three source files:
+"first.cpp" and "second.cpp" are just test files for compilation. The main code is in "assignment.cpp".
+
+To make from source, we can do the following:
+
+$ make 
+Builds assignment.cpp
+
+$ make assignment
+Builds assignment.cpp
+
+$ make first
+Builds first.cpp
+
+$ make second
+Builds second.cpp
+
+$ make all
+Builds all the cpp files.
+
+After building, the object files are stored in the bin/ directory.
+To execute main application:
+$ ./bin/assignment.o
+
+To clean the project (Remove binaries):
+$ make clean
